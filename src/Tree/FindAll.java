@@ -15,6 +15,7 @@ public class FindAll {
 
 
         //前序遍历
+        //递归
         public List<Integer> preorderTraversal (TreeNode root){
         List<Integer> result = new ArrayList<>();
         perorder(root, result);
