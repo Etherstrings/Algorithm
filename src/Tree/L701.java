@@ -30,31 +30,67 @@ public class L701 {
 
     //递归方法
     public TreeNode insertIntoBST(TreeNode root, int val) {
+            //首先确定递归的传递参数和返回值
+            //传递参数就是val，要插入的数值
+            //返回值是插入的节点
+
+            //确定终止条件
+            //想想 如果 要插入的值 就在root
+            //怎么返？
+            if(root==null){
+                return new TreeNode(val);
+            }
 
 
-        //如果当前节点未空，说明找到了合适的位置
-        if(root==null){
-            return new TreeNode(val);
-        }
+            //确定每次该怎么递归？
 
-        if(root.val<val){
-            // 递归创建右子树
-            root.right=insertIntoBST(root.right,val);
+            //二叉搜索树
+            if(root.val<val){
+                //当前节点的值 小于要插入的值
+                //说明插入值在当前节点的右边
+                root.right=insertIntoBST(root.right,val);
+            }else {
+                //当前节点的值 大于要插入的值
+                //说明插入值在当前节点的左边
+                root.left=insertIntoBST(root.left,val);
+            }
 
-        }
-
-        if(root.val>val){
-            // 递归创建左子树
-            root.left=insertIntoBST(root.left,val);
-
-        }
-
-        return root;
+            return root;
     }
 
 
     //迭代方法
     public TreeNode insertIntoBST(TreeNode root, int val) {
+        if(root==null){
+            return new TreeNode(val);
+        }
+
+
+        TreeNode newRoot=root;
+        TreeNode pre=root;
+
+        while(root!=null){
+            pre=root;
+
+            if(root.val>val){
+                root=root.left;
+            }
+
+            if(root.val<val){
+                root=root.right;
+            }
+
+            if(pre.val>val){
+                pre.left=new TreeNode(val);
+            }else {
+                pre.right=new TreeNode(val);
+            }
+
+            return newRoot;
+
+
+
+        }
 
 
 
