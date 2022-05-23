@@ -38,7 +38,7 @@ public class L39 {
 
     //维护全局变量
 
-    List<Integer> Path=new ArrayList<>();
+    LinkedList<Integer> Path=new LinkedList<>();
     List<List<Integer>> Result=new ArrayList<>();
 
 
@@ -54,7 +54,7 @@ public class L39 {
             return;
         }
         if(sum==target){
-            Result.add(Path);
+            Result.add(new ArrayList<>(Path));
             return;
         }
 
@@ -64,9 +64,9 @@ public class L39 {
             sum+=candidates[i];
             Path.add(candidates[i]);
 
-            BackStracking(candidates,target,index,sum);
+            BackStracking(candidates,target,i,sum);
             sum-=candidates[i];
-            Path.remove(Path.size()-1);
+            Path.removeLast();
         }
     }
 
