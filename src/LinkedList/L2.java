@@ -23,25 +23,23 @@ public class L2 {
         //翻转l1 l2
         reverseList(l1);
         reverseList(l2);
-        //顺序取出l1 l2的值
-        //遍历
-        ListNode NotRell1=new ListNode(-1,l1);
-        ListNode NotRell2=new ListNode(-1,l2);
 
-        //遍历l1
-        ListNode pre=NotRell1;
-        ListNode now=l1;
-        List<Integer> l1number=new ArrayList<>();
-        while(now!=null){
-            l1number.add(now.val);
-            pre=now;
-            now=now.next;
+        String a="";
+        String b="";
+        ListNode Pointa=l1;
+        ListNode Pointb=l2;
+        while(Pointa!=null){
+            a+=Pointa.val;
+            Pointa=Pointa.next;
         }
-        int howlong=l1number.size();
-
-        for(int i:l1number){
-
+        while(Pointb!=null){
+            b+=Pointb.val;
+            Pointb=Pointb.next;
         }
+        Integer anew = Integer.valueOf(a);
+        Integer bnew=Integer.valueOf(b);
+        int sum=anew+bnew;
+
 
 
     }

@@ -37,7 +37,7 @@ public class FindAll {
     //中序遍历
     public List<Integer> inorderTraversal(TreeNode root){
         List<Integer> result=new ArrayList<>();
-        inorder(root,result );
+        inorder(root,result);
         return result;
     }
 
@@ -45,9 +45,9 @@ public class FindAll {
             if(root==null){
                 return;
             }
-            inorder(root.left,result );
+            inorder(root.left,result);
             result.add(root.val);
-            inorder(root.right,result );
+            inorder(root.right,result);
     }
 
 

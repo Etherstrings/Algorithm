@@ -1,5 +1,6 @@
 package BackStracking;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,6 +30,6 @@ public class L332 {
     //输出：["JFK","ATL","JFK","SFO","ATL","SFO"]
     //解释：另一种有效的行程是 ["JFK","SFO","ATL","JFK","ATL","SFO"] ，但是它字典排序更大更靠后。
     public List<String> findItinerary(List<List<String>> tickets) {
-
+        return new ArrayList<>();
     }
 }
