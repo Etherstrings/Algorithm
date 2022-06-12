@@ -20,12 +20,10 @@ public class Lweek289_1 {
         }
         news+=sumk(s);
 
-        if(news.length()>k){
-            //写新的循环
-            while()
-        }else {
-            return news;
-        }
+        /**
+         *
+         */
+
 
     }
 
