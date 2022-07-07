@@ -45,5 +45,43 @@ public class L515 {
         return answer;
     }
 
+    public List<Integer> largestValues1(TreeNode root){
+        //复写一次
+        //层序遍历
+        List<Integer> Answer=new ArrayList<>();
+        //队列作为层序遍历
+        Queue<TreeNode> Judge=new LinkedList<>();
 
+        //停止递归的条件
+        if(root!=null){
+            Judge.add(root);
+        }
+
+        //当这个队列里还有节点的时候
+        while (!Judge.isEmpty()){
+            //这一层怎么存?
+            //1.用一个容器存
+            //2.直接每次都比较大小
+
+            //用容器存吧还是
+            List<Integer> LevelAllNum=new ArrayList<>();
+            int level= Judge.size();
+            for(int i=0;i<level;i++){
+                //当前节点取出来
+                //加左加右
+                TreeNode temp=Judge.poll();
+                LevelAllNum.add(temp.val);
+                if(temp.left!=null){
+                    Judge.offer(temp.left);
+                }
+                if(temp.right!=null){
+                    Judge.offer(temp.right);
+                }
+
+            }
+            Answer.add(Collections.max(LevelAllNum));
+
+        }
+        return Answer;
+    }
 }
