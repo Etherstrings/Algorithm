@@ -28,46 +28,48 @@ public class L332 {
     //输入：tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
     //输出：["JFK","ATL","JFK","SFO","ATL","SFO"]
     //解释：另一种有效的行程是 ["JFK","SFO","ATL","JFK","ATL","SFO"] ，但是它字典排序更大更靠后。
-    private Deque<String> res;
-    private Map<String, Map<String, Integer>> map;
 
+    List<String> res=new ArrayList<>();
     public List<String> findItinerary(List<List<String>> tickets) {
-        map = new HashMap<String, Map<String, Integer>>();
-        res = new LinkedList<>();
-        for(List<String> t : tickets){
-            Map<String, Integer> temp;
-            if(map.containsKey(t.get(0))){
-                temp = map.get(t.get(0));
-                temp.put(t.get(1), temp.getOrDefault(t.get(1), 0) + 1);
-            }else{
-                temp = new TreeMap<>();//升序Map
-                temp.put(t.get(1), 1);
-            }
-            map.put(t.get(0), temp);
+        //String-起始位置
+        //TreeMap-目的地，还剩几张票
+        HashMap<String,TreeMap<String,Integer>> map=new HashMap<>();
+        for(List<String> Ticket:tickets){
+            //出发地
+            String from=Ticket.get(0);
+            //目的地
+            String to=Ticket.get(1);
 
+            map.putIfAbsent(from,new TreeMap<>());
+            TreeMap<String,Integer> treeMap=map.get(from);
+            treeMap.put(to,treeMap.getOrDefault(to,0)+1);
         }
         res.add("JFK");
-        BackTarcking(tickets.size());
-        return new ArrayList<>(res);
+        backtrack(tickets,map,0);
+
+        return res;
     }
 
-    private boolean BackTarcking(int ticketNum){
-        if(res.size()==ticketNum+1){
+    private boolean backtrack(List<List<String>> tickets,HashMap<String,TreeMap<String,Integer>> map,int progress){
+        if(progress==tickets.size()){
             return true;
         }
-
-        String last= res.getLast();
-        if(map.containsKey(last)){
-            for(Map.Entry<String,Integer> target:map.get(last).entrySet()){
-                int count=target.getValue();
-                if(count>0){
-                    res.add(target.getKey());
-                    target.setValue(count - 1);
-                    if(BackTarcking(ticketNum)) return true;
-                    res.removeLast();
-                    target.setValue(count);
-                }
+        TreeMap<String,Integer> tos=map.get(res.get(res.size()-1));
+        if(tos==null||tos.isEmpty()||tos.size()==0){
+            return false;
+        }
+        for(String str:tos.keySet()){
+            if(tos.get(str)==0){
+                continue;
             }
+            res.add(str);
+            tos.put(str,tos.get(str)-1);
+
+            if(backtrack(tickets,map,progress+1)){
+                return true;
+            }
+            res.remove(res.size()-1);
+            tos.put(str,tos.get(str)+1);
         }
         return false;
     }
