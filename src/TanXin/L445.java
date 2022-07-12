@@ -44,8 +44,12 @@ public class L445 {
         int cookieindex=0;
         int childindex=0;
 
+
+        //保证小孩还有以及饼干也还有
         while(childindex<g.length&&cookieindex<s.length){
             if(g[childindex]<=s[cookieindex]){
+                //如果当前小孩被小饼干喂饱了
+                //那就下一个小孩了
                 childindex++;
             }
             //饼干只可以用一次
