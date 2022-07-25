@@ -35,10 +35,42 @@ public class L968 {
     //
     //给定树的节点数的范围是 [1, 1000]。
     //每个节点的值都是 0。
-
+    int res=0;
     public int minCameraCover(TreeNode root) {
         //局部最优：让叶子节点的父节点安摄像头，所用摄像头最少，整体最优：全部摄像头数量所用最少
-
         //遍历方式---后序遍历 左右中
+        if(minCame(root)==0){
+            //找一遍没有
+            res++;
+        }
+        return res;
+    }
+    /**
+     节点的状态值：
+     0 表示无覆盖
+     1 表示 有摄像头
+     2 表示有覆盖
+     后序遍历，根据左右节点的情况,来判读 自己的状态
+     */
+    public int minCame(TreeNode root){
+        if(root==null){
+            return 2;
+        }
+        int left=minCame(root.left);
+        int right=minCame(root.right);
+
+        if(left==2&&right==2){
+            // 如果左右节点都覆盖了的话, 那么本节点的状态就应该是无覆盖,没有摄像头
+            return 0;
+        }else if(left==0&&right==0){
+            // 左右节点都是无覆盖状态,那 根节点此时应该放一个摄像头
+            res++;
+            return 1;
+        }else {
+            // 左右节点的 状态为 (1,1) (1,2) (2,1) 也就是左右节点至少存在 1个摄像头，
+            // 那么本节点就是处于被覆盖状态
+            return 2;
+        }
+
     }
 }
