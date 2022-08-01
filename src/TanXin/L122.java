@@ -2,7 +2,7 @@ package TanXin;
 
 /**
  * @author Etherstrings
- * @create 2022-07-12 21:37 TanXin - the name of the target package where the new class or interface will be created.  Algorithm - the name of the current project.  null.java - the name of the PHP file that will be created.  L122 - the name of the new file which you specify in the New File dialog box during the file creation.  ps - the login name of the current user.  2022/7/12 - the current system date.  21:37 - the current system time.  2022 - the current year.  07 - the current month.  12 - the current day of the month.  21 - the current hour.  37 - the current minute.  IntelliJ IDEA - the name of the IDE in which the file will be created.  7月 - the first 3 letters of the month name. Example: Jan, Feb, etc.  七月 - full name of a month. Example: January, February, etc
+ * @create 2022-07-12 21:37 TanXin - the name of the target package where the new class or interface will be created.  Algorithm - the name of the current project.  null.java - the name of the PHP file that will be created.  L122_BuyStockII - the name of the new file which you specify in the New File dialog box during the file creation.  ps - the login name of the current user.  2022/7/12 - the current system date.  21:37 - the current system time.  2022 - the current year.  07 - the current month.  12 - the current day of the month.  21 - the current hour.  37 - the current minute.  IntelliJ IDEA - the name of the IDE in which the file will be created.  7月 - the first 3 letters of the month name. Example: Jan, Feb, etc.  七月 - full name of a month. Example: January, February, etc
  */
 public class L122 {
     //122. 买卖股票的最佳时机 II
