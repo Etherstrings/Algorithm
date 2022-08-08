@@ -32,7 +32,7 @@ public class LSword05 {
     //
     //0 <= s 的长度 <= 10000
 
-    public String replaceSpace(String s) {
+    public String replaceSpace1(String s) {
         if(s.indexOf(" ")==-1){
             return s;
         }
