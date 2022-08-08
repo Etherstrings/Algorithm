@@ -1,5 +1,8 @@
 package HASH;
 
+import java.util.HashMap;
+import java.util.Set;
+
 /**
  * @author Etherstrings
  * @create 2022-02-06 13:14
@@ -52,5 +55,43 @@ public class L242 {
             }
         }
         return true;
+    }
+
+
+    public boolean isAnagram1(String s, String t){
+        //判断s和t是不是相同字母组成的 只是位置不同
+        if(s.length()!=t.length()){
+            return false;
+        }
+        HashMap<Character,Integer> sh=new HashMap<>();
+        HashMap<Character,Integer> th=new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            if(sh.containsKey(s.charAt(i))){
+                sh.put(s.charAt(i),sh.get(s.charAt(i))+1);
+            }else {
+                sh.put(s.charAt(i),1);
+            }
+
+            if(th.containsKey(t.charAt(i))){
+                th.put(t.charAt(i),th.get(t.charAt(i))+1);
+            }else {
+                th.put(t.charAt(i),1);
+            }
+        }
+        Set<Character> schars = sh.keySet();
+        Set<Character> tchars = th.keySet();
+        boolean Flag=true;
+        for(Character a:schars){
+            if(!tchars.contains(a)){
+                Flag=false;
+                break;
+            }
+            if(sh.get(a)!=th.get(a)){
+                Flag=false;
+                break;
+            }
+        }
+        return Flag;
+
     }
 }

@@ -1,5 +1,6 @@
 package HASH;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -42,5 +43,32 @@ public class L349 {
         }
 
         return really;
+    }
+
+    public int[] intersection1(int[] nums1, int[] nums2){
+        if(nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0){
+            return new int[0];
+        }
+
+        //先转换nums1
+        //再遍历另一个数组---操作转换后的nums1
+        //只需要返回哪个数共同出现 不需要返回出现次数
+        Set<Integer> Judge=new HashSet<>();
+        for(int a:nums1){
+            Judge.add(a);
+        }
+        Set<Integer> Aans=new HashSet<>();
+        for(int b:nums2){
+            if(Judge.contains(b)){
+                Aans.add(b);
+            }
+        }
+        int[] ans=new int[Aans.size()];
+        int i=0;
+        for(int a:Aans){
+            ans[i]=a;
+            i++;
+        }
+        return ans;
     }
 }

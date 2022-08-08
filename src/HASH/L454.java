@@ -8,8 +8,33 @@ import java.util.Map;
  * @create 2022-02-10 19:07
  */
 public class L454 {
-
-        public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
+    public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4){
+        //思路
+        //1 2 所有的和a-次数
+        //3 4 如果出现有和可以满足 -b+a=0 次数加
+        HashMap<Integer,Integer> Judge=new HashMap<>();
+        for(int a:nums1){
+            for(int b:nums2){
+                int temp=a+b;
+                if(Judge.containsKey(temp)){
+                    Judge.put(temp,Judge.get(temp)+1);
+                }else {
+                    Judge.put(temp,1);
+                }
+            }
+        }
+        int ans=0;
+        for(int a:nums3){
+            for(int b:nums4){
+                int temp=a+b;
+                if(Judge.containsKey(-temp)){
+                    ans+=Judge.get(-temp);
+                }
+            }
+        }
+        return ans;
+    }
+    public int fourSumCount1(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
             Map<Integer, Integer> map = new HashMap<>();
             int temp;
             int res = 0;
