@@ -6,6 +6,10 @@ package TwoPoint;
  */
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * 15. 三数之和
@@ -21,19 +25,13 @@ public class L15ThreeNumbers {
     public static void main(String[] args) {
         L15ThreeNumbers l15ThreeNumbers=new L15ThreeNumbers();
         int[] nums={-1,0,1,2,-1,-4};
-
-        int[] answer=l15ThreeNumbers.threeSum(nums);
-        for(int i=0;i<answer.length;i++){
-            System.out.print(answer[i]+" ");
-        }
-
-
+        List<List<Integer>> answer=l15ThreeNumbers.threeSum(nums);
     }
 
 
 
     //三重循环肯定不对劲
-    public int[] threeSum(int[] nums) {
+    public int[] threeSum1(int[] nums) {
 
         for(int i=0;i<nums.length;i++){
             for(int j=i+1;j<nums.length;j++){
@@ -49,4 +47,47 @@ public class L15ThreeNumbers {
         }
         return null;
     }
+
+
+    //实际上三重循环能写，但是超时
+    //三指针
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> ans=new ArrayList<>();
+        //首先对数组进行排序
+        Arrays.sort(nums);
+
+        //最外层循环 i 0-len-1
+        //每个i left=i+1 right=len-1
+        for(int i=0;i<nums.length;i++){
+            //如果当前这个大于零 后面所有的都不会为0
+            if(nums[i]>0){
+                return ans;
+            }
+
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            int left=i+1;
+            int right=nums.length-1;
+            while(left<right){
+                int temp=nums[i]+nums[left]+nums[right];
+                if(temp<0){
+                    left++;
+                }else if(temp>0){
+                    right--;
+                }else {
+                    ans.add(Arrays.asList(nums[i], nums[left], nums[right]));
+
+                    while (right > left && nums[right] == nums[right - 1]) right--;
+                    while (right > left && nums[left] == nums[left + 1]) left++;
+
+                    left++;
+                    right--;
+                }
+            }
+        }
+        return ans;
+    }
+
 }
