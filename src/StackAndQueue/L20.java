@@ -1,5 +1,7 @@
 package StackAndQueue;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -15,7 +17,7 @@ public class L20 {
     //左括号必须以正确的顺序闭合。
     //
 
-    public boolean isValid(String s) {
+    public boolean isValid1(String s) {
         //思路
         //用栈来实现
         //先进 后出
@@ -45,5 +47,32 @@ public class L20 {
         }
         return judgement.isEmpty();
 
+    }
+    public boolean isValid(String s){
+        //三种情况
+        //左边括号多
+        //右边括号多
+        //中间括号无法消除
+        Deque<Character> deque = new LinkedList<>();
+        for(int i=0;i<s.length();i++){
+            char temp=s.charAt(i);
+            //碰到左括号，就把相应的右括号入栈
+            if (temp == '(') {
+                deque.push(')');
+            }else if (temp == '{') {
+                deque.push('}');
+            }else if (temp == '[') {
+                deque.push(']');
+            } else if (deque.isEmpty() || deque.peek() != temp) {
+                //这里说明
+                //1.用完括号了 没有可以匹配当前的了
+                //2.当前的括号和设定的不是一个 消不掉
+                return false;
+            }else {//如果是右括号判断是否和栈顶元素匹配
+                deque.pop();
+            }
+        }
+        //判断是不是最后正好消完  而不是剩下左元素
+        return deque.isEmpty();
     }
 }

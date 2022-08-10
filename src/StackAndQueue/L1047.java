@@ -13,7 +13,7 @@ public class L1047 {
     //在 S 上反复执行重复项删除操作，直到无法继续删除。
     //
     //在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。
-    public String removeDuplicates(String s) {
+    public String removeDuplicates1(String s) {
         char[] chars = s.toCharArray();
         Stack<Character> charjudgement = new Stack<>();
         for(int i=0;i<chars.length;i++){
@@ -29,5 +29,29 @@ public class L1047 {
         }
 
         return answer.reverse().toString();
+    }
+
+    public String removeDuplicates(String s){
+        //祖玛的感觉
+        //直接不用做太多操作--挨个遍历 入栈
+        Stack<Character> Judge=new Stack<>();
+        for(Character a:s.toCharArray()){
+            if(Judge.isEmpty()){
+                Judge.push(a);
+                continue;
+            }
+            if(Judge.peek()==a){
+                Judge.pop();
+                continue;
+            }else {
+                Judge.push(a);
+            }
+        }
+        String ans="";
+        while (!Judge.isEmpty()){
+            ans+=Judge.pop();
+        }
+        StringBuilder relans=new StringBuilder(ans);
+        return relans.reverse().toString();
     }
 }

@@ -20,7 +20,11 @@ public class L347 {
     //
     //输入: nums = [1], k = 1
     //输出: [1]
-    public int[] topKFrequent(int[] nums, int k) {
+
+    //大顶堆 小顶堆
+    //最大值在最外层
+    //最小值在最外层
+    public int[] topKFrequent1(int[] nums, int k) {
         Map<Integer,Integer> answer=new HashMap<>();
         for(int i=0;i<nums.length;i++){
             if(answer.containsKey(nums[i])){
@@ -42,6 +46,31 @@ public class L347 {
 
         }
         return relanswer;
+    }
+
+    public int[] topKFrequent(int[] nums, int k) {
+        //HashMap+小顶堆---实际就是排序序列
+        int[] result = new int[k];
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        Set<Map.Entry<Integer, Integer>> entries = map.entrySet();
+        PriorityQueue<Map.Entry<Integer, Integer>> queue=new PriorityQueue<>(
+                //按照o1 o2的value倒叙排列
+                ((o1, o2) -> o2.getValue() - o1.getValue())
+        );
+        //加入这个队列 自动排序了
+        for(Map.Entry<Integer, Integer> temp:entries){
+            queue.offer(temp);
+        }
+
+        //取出前k个元素
+        for (int i = k - 1; i >= 0; i--) {
+            result[i] = queue.poll().getKey();
+        }
+        return result;
+
     }
 
 }
