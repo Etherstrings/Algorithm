@@ -23,13 +23,23 @@ public class L48 {
     //输入：matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
     //输出：[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
     public void rotate(int[][] matrix) {
-        //n n
-
-        // 1 2
-        // 3 4
-
-        // 3 1
-        // 4 2
+        //先按照对角线翻转
+        int n=matrix.length;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i]=temp;
+            }
+        }
+        //再直接沿着垂直竖线反转
+        for(int i=0;i<n;i++){
+            for(int j=0,k=n-1;j<k;j++,k--){
+                int temp=matrix[i][k];
+                matrix[i][k] = matrix[i][j];
+                matrix[i][j] = temp;
+            }
+        }
     }
 
 }
