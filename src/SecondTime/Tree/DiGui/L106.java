@@ -4,41 +4,64 @@ package SecondTime.Tree.DiGui;
 import Tree.TreeNode;
 
 /**
- * @author Etherstrings
- * @create 2022-08-16 20:52 SecondTime.Tree.DiGui - the name of the target package where the new class or interface will be created.  Algorithm - the name of the current project.  null.java - the name of the PHP file that will be created.  L106 - the name of the new file which you specify in the New File dialog box during the file creation.  ps - the login name of the current user.  2022/8/16 - the current system date.  20:52 - the current system time.  2022 - the current year.  08 - the current month.  16 - the current day of the month.  20 - the current hour.  52 - the current minute.  IntelliJ IDEA - the name of the IDE in which the file will be created.  8月 - the first 3 letters of the month name. Example: Jan, Feb, etc.  八月 - full name of a month. Example: January, February, etc
+ * @description:
+ * @author： wuboyu
+ * @date： 2022-08-18 11:22
  */
 public class L106 {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        return buildTree1(inorder, 0, inorder.length, postorder, 0, postorder.length);
-    }
-    public TreeNode buildTree1(int[] inorder, int inLeft, int inRight,
-                               int[] postorder, int postLeft, int postRight) {
-        // 没有元素了
-        if (inRight - inLeft < 1) {
+        if(inorder.length==0||postorder.length==0){
             return null;
         }
-        // 只有一个元素了
-        if (inRight - inLeft == 1) {
-            return new TreeNode(inorder[inLeft]);
+        //从头到尾  左闭右开
+        return buils(inorder,0,inorder.length
+        ,postorder,0,postorder.length);
+
+    }
+
+    TreeNode buils(int[] inorder, int instart, int inend,
+                   int[] postorder, int poststart, int postend){
+        //先找后序中的当前root
+        if(poststart==postend){
+            return null;
         }
-        // 后序数组postorder里最后一个即为根结点
-        int rootVal = postorder[postRight - 1];
-        TreeNode root = new TreeNode(rootVal);
-        int rootIndex = 0;
-        // 根据根结点的值找到该值在中序数组inorder里的位置
-        for (int i = inLeft; i < inRight; i++) {
-            if (inorder[i] == rootVal) {
-                rootIndex = i;
+        //再根据root构建出root的left和root的right
+        int rootval=postorder[postend-1];
+        TreeNode root = new TreeNode(rootval);
+        //在前序中找到当前root对应的index
+        int rootindex=-1;
+        for(int i=instart;i<inend;i++){
+            if(inorder[i]==rootval){
+                rootindex=i;
                 break;
             }
         }
-        // 根据rootIndex划分左右子树
-        root.left = buildTree1(inorder, inLeft, rootIndex,
-                postorder, postLeft, postLeft + (rootIndex - inLeft));
-        root.right = buildTree1(inorder, rootIndex + 1, inRight,
-                postorder, postLeft + (rootIndex - inLeft), postRight - 1);
+        //前序的
+        //现在左边的是left
+        int inleft1=instart;
+        int inleft2=rootindex;
+        //右边的是right
+        int inright1=rootindex+1;
+        int inright2=inend;
+
+        //根据前序划分的长度
+        //切割后序
+        //left长度
+        int length1=inleft2-inleft1;
+        //right长度
+        int length2=inright2-inright1;
+
+        //后序切的left 左闭右开
+        int postleft1=poststart;
+        int postleft2=poststart+length1;
+
+        //后序切的right
+        int postright1=poststart+length1;
+        int postright2=postend-1;
+
+        root.left=buils(inorder,inleft1,inleft2,postorder,postleft1,postleft2);
+        root.right=buils(inorder,inright1,inright2,postorder,postright1,postright2);
+
         return root;
     }
-
-
 }
