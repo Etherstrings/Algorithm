@@ -48,7 +48,9 @@ public class L93 {
             //当前的字串
             //是否满足？
             String temp=s.substring(startindex,i+1);
-            if(HeFa(temp))
+            if(HeFa(temp)){
+                Path.add(temp);
+            }
         }
     }
 }
