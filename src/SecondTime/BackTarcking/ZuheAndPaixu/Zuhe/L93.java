@@ -49,7 +49,7 @@ public class L93 {
             //是否满足？
             String temp=s.substring(startindex,i+1);
             if(HeFa(temp)){
-                Path.add(temp);
+                Path.add(temp)
             }
         }
     }
