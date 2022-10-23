@@ -48,14 +48,14 @@ public class L20 {
         return judgement.isEmpty();
 
     }
-    public boolean isValid(String s){
+    public boolean isValid(String str){
         //三种情况
         //左边括号多
         //右边括号多
         //中间括号无法消除
         Deque<Character> deque = new LinkedList<>();
-        for(int i=0;i<s.length();i++){
-            char temp=s.charAt(i);
+        for(int i=0;i<str.length();i++){
+            char temp=str.charAt(i);
             //碰到左括号，就把相应的右括号入栈
             if (temp == '(') {
                 deque.push(')');
