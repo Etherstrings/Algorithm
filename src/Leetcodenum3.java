@@ -22,7 +22,7 @@ public class Leetcodenum3 {
      如果到n之后，剩下的长度，小于以有的num 停止
      */
 
-    public int lengthOfLongestSubstring(String s){
+    public static int lengthOfLongestSubstring(String s){
         char[] chars=s.toCharArray();
         //s转换为arraylist
         ArrayList list=new ArrayList();

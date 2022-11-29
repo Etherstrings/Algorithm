@@ -32,7 +32,7 @@ public class S2016 {
     //
     //输入: s = ""
     //输出: 0
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         if(s.equals("")){
             return 0;
         }
