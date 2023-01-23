@@ -4,7 +4,6 @@ package Tool;
 import LinkedList.ListNode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
 public class ATool {
 
     //将静态数组Or动态数组顺序转为LinkedList
-    public static ListNode Array2LinkedList(Object[] array, List<Object> arraylist){
+    public static ListNode Array2LinkedList(int[] array, List<Integer> arraylist){
         ListNode head=null;
         if(array==null&&arraylist==null){
             return head;
@@ -67,7 +66,7 @@ public class ATool {
 
 
     //将静态数组Or动态数组逆序转为LinkedList
-    public static ListNode ReArray2LinkedList(Object[] array, List<Object> arraylist){
+    public static ListNode ReArray2LinkedList(int[] array, List<Integer> arraylist){
         ListNode head=null;
         if(array==null&&arraylist==null){
             return head;
@@ -102,9 +101,14 @@ public class ATool {
                 return head;
             }
             //反转
-            List<Object> objects = Arrays.asList(array);
-            Collections.reverse(objects);
-            array = objects.toArray(new Object[objects.size()]);
+
+            List<Integer> objects = new ArrayList<>();
+            for(int i=array.length-1;i>=0;i--){
+                objects.add(array[i]);
+            }
+            for(int i=0;i<array.length;i++){
+                array[i]=objects.get(i);
+            }
             int temp=(int)array[0];
             head=new ListNode(temp);
             ListNode Now=head;
@@ -124,14 +128,15 @@ public class ATool {
 
 
     //将LinkedList转为ArrayList
-    public static List<Object> LinkedList2ArrayList(ListNode head){
+    public static List<Integer> LinkedList2ArrayList(ListNode head){
         if(head==null){
             return new ArrayList<>();
         }
-        List<Object> ans=new ArrayList<>();
+        List<Integer> ans=new ArrayList<>();
         ListNode now=head;
         while(now!=null){
             ans.add(now.val);
+            now=now.next;
         }
         return ans;
     }
