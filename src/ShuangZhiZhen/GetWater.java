@@ -7,8 +7,11 @@ package ShuangZhiZhen;
 public class GetWater {
     //接雨水
     //双指针
+    public static void main(String[] args) {
 
-    public int trap(int[] height) {
+    }
+
+    public static int trap(int[] height) {
         //1.按照每一列来算
         int sum=0;
         for(int i=1;i<height.length-1;i++){
@@ -32,7 +35,7 @@ public class GetWater {
         return sum;
     }
 
-    public int trap1(int[] height){
+    public static int trap1(int[] height){
         //动态规划
         //dp[][]
         //dp[i][j]  i 表示位置 j-0代表左侧的最大值 1代表右侧的最大值
