@@ -32,7 +32,7 @@ public class L142RoundTwo {
 
                 return index1;
             }
-
+            boolean f=true;
         }
         return null;
     }

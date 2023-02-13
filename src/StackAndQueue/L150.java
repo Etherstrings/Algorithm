@@ -59,7 +59,7 @@ public class L150 {
     //去掉括号后表达式无歧义，上式即便写成 1 2 + 3 4 + * 也可以依据次序计算出正确结果。
     //适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中
     //
-    public int evalRPN(String[] tokens) {
+    public int evalRPN1(String[] tokens) {
         Stack<Integer> judgement=new Stack<>();
         for(int i=0;i<tokens.length;i++){
             if("+".equals(tokens[i])){
@@ -87,5 +87,29 @@ public class L150 {
         }
         return judgement.pop();
 
+    }
+
+    public int evalRPN(String[] tokens){
+        Stack<Integer> Judge=new Stack<>();
+        for(String temp:tokens){
+            if(temp.equals("+")){
+                //取前边两个数计算
+                int a=Judge.pop();
+                int b=Judge.pop();
+                Judge.push(a+b);
+            }else if(temp.equals("-")){
+                Judge.push(-Judge.pop() + Judge.pop());
+            }else if(temp.equals("*")){
+                Judge.push(Judge.pop()*Judge.pop());
+            }else if(temp.equals("/")){
+                //取前边两个数计算
+                int a=Judge.pop();
+                int b=Judge.pop();
+                Judge.push(b/a);
+            }else {
+                Judge.push(Integer.valueOf(temp));
+            }
+        }
+        return Judge.pop();
     }
 }

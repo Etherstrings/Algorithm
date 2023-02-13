@@ -18,9 +18,38 @@ public class L28newstrSTR {
     //对于本题而言，当 needle 是空字符串时我们应当返回 0 。这与 C 语言的 strstr() 以及 Java 的 indexOf() 定义相符。
 
     public int strStr(String haystack, String needle) {
-        char[] chars1 = haystack.toCharArray();
-        char[] chars2 = needle.toCharArray();
-        boolean flag=true;
+        if(needle.length()==0){
+            return 0;
+        }
 
+        int[] next=new int[needle.length()];
+        getNext(next,needle);
+
+        int j=0;
+        for(int i=0;i<haystack.length();i++){
+            while (j > 0 && needle.charAt(j) != haystack.charAt(i))
+                j = next[j - 1];
+            if (needle.charAt(j) == haystack.charAt(i))
+                j++;
+            if (j == needle.length())
+                return i - needle.length() + 1;
+        }
+        return -1;
+
+    }
+
+    void getNext(int[] next,String s){
+        int j=0;
+        next[0]=0;
+
+        for(int i=1;i<s.length();i++){
+            while(j>0&&s.charAt(j)!=s.charAt(i)){
+                j=next[j-1];
+            }
+            if(s.charAt(j)==s.charAt(i)){
+                j++;
+            }
+            next[i]=j;
+        }
     }
 }

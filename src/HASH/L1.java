@@ -25,4 +25,21 @@ public class L1 {
         }
         return answer;
     }
+
+
+    public int[] twoSum1(int[] nums, int target) {
+        //哈希表 一一对应
+        HashMap<Integer,Integer> Judge=new HashMap<>();
+        int[] ans=new int[2];
+        for(int i=0;i<nums.length;i++){
+            int temp=target-nums[i];
+            if(Judge.containsKey(temp)){
+                ans[0]=i;
+                ans[1]=Judge.get(temp);
+            }
+            Judge.put(nums[i],i);
+        }
+        return ans;
+
+    }
 }

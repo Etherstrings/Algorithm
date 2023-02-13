@@ -16,4 +16,34 @@ public class LSword05 {
 
         return answer.toString();
     }
+
+    //剑指 Offer 05. 替换空格
+    //请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+    //
+    //
+    //
+    //示例 1：
+    //
+    //输入：s = "We are happy."
+    //输出："Wecare%20happy."
+    //
+    //
+    //限制：
+    //
+    //0 <= s 的长度 <= 10000
+
+    public String replaceSpace1(String s) {
+        if(s.indexOf(" ")==-1){
+            return s;
+        }
+        String[] temp = s.split(" ");
+        String ans="";
+        for(String a:temp){
+            ans+=a+"%20";
+        }
+        int index=ans.lastIndexOf("%20");
+        ans=ans.substring(0,index);
+       return ans;
+
+    }
 }

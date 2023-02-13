@@ -40,17 +40,24 @@ public class L100 {
 
     //递归的参数
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        //递归的终止条件
         if(p==null&&q==null){
             return true;
         }
-
-
-        if(p!=null&&q!=null&&p.val== q.val){
-            return isSameTree(p.left,q.left)&&isSameTree(p.right,q.right);
-        }else {
+        if(p==null&&q!=null){
             return false;
         }
+        if(p!=null&&q==null){
+            return false;
+        }
+        if(p!=null&&q!=null){
+            if(p.val!=q.val){
+                return false;
+            }
+            boolean left= isSameTree(p.left,q.left);
+            boolean right= isSameTree(p.right,q.right);
+            return left&&right;
+        }
+        return false;
     }
 
     public boolean isSameTree1(TreeNode p, TreeNode q) {
