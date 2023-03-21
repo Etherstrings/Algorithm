@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class L179 {
     //给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。
     //
@@ -14,6 +16,11 @@ public class L179 {
     //输入：nums = [3,30,34,5,9]
     //输出："9534330"
     public String largestNumber(int[] nums) {
-
+        Arrays.sort(nums);
+        StringBuilder sb=new StringBuilder("");
+        for(int i= nums.length-1;i>=0;i--){
+            sb.append(nums[i]);
+        }
+        return sb.toString();
     }
 }

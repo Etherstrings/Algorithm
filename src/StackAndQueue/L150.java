@@ -1,6 +1,6 @@
 package StackAndQueue;
 
-import jdk.nashorn.internal.scripts.JD;
+
 
 import java.util.Stack;
 

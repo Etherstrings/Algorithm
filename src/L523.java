@@ -30,14 +30,14 @@ public class L523 {
     //输出：false
     List<List<Integer>> Result=new ArrayList<>();
     LinkedList<Integer> Path=new LinkedList<>();
-    public boolean checkSubarraySum(int[] nums, int k) {
+    public boolean checkSubarraySum1(int[] nums, int k) {
         //回溯
         //    //给你一个整数数组 nums 和一个整数 k ，编写一个函数来判断该数组是否含有同时满足下述条件的连续子数组：
         //    //
         //    //子数组大小 至少为 2 ，且
         //    //子数组元素总和为 k 的倍数。
         Backtarcking(nums,k,0,0);
-
+        return true;
     }
 
     void Backtarcking(int[] nums,int k,int startindex,int sum){
@@ -56,7 +56,7 @@ public class L523 {
     }
 
      boolean isTure(int sum){
-
+        return true;
      }
 
     public boolean checkSubarraySum(int[] nums, int k){

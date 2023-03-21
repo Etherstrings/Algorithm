@@ -13,6 +13,6 @@ public class L718 {
     //输入：nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]
     //输出：5
     public int findLength(int[] nums1, int[] nums2) {
-
+        return 1;
     }
 }

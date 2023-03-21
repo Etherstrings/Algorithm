@@ -49,5 +49,6 @@ public class L6162 {
                 shouji+=travel[i];
             }
         }
+        return 1;
     }
 }

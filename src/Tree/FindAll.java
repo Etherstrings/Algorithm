@@ -1,8 +1,6 @@
 package Tree;
 
 
-import sun.reflect.generics.tree.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +18,8 @@ public class FindAll {
         List<Integer> result = new ArrayList<>();
         perorder(root, result);
         return result;
-    }
 
+        }
         public void perorder (TreeNode root, List < Integer > result){
         if (root == null) {
             return;

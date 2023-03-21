@@ -92,7 +92,7 @@ public class L735 {
 
     //想简单了 这个是可以并行的！
     //就是左边不一定都是正数 可能随时随地都在碰撞
-    public int[] asteroidCollision(int[] asteroids){
+    public int[] asteroidCollision1(int[] asteroids){
         Stack<Integer> Judge=new Stack<>();
         //从左往右遍历
         for(int i=0;i<asteroids.length;i++){

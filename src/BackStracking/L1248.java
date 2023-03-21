@@ -27,6 +27,6 @@ public class L1248 {
     //输入：nums = [2,2,2,1,2,2,1,2,2,2], k = 2
     //输出：16
     public int numberOfSubarrays(int[] nums, int k) {
-
+        return 1;
     }
 }

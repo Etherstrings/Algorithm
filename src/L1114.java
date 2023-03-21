@@ -37,9 +37,7 @@ public class L1114 {
     //解释：
     //输入 [1,3,2] 表示线程 A 将会调用 first() 方法，线程 B 将会调用 third() 方法，线程 C 将会调用 second() 方法。正确的输出是 "firstsecondthird"。
     private volatile int flag=1;
-    public Foo() {
 
-    }
 
     public void first(Runnable printFirst) throws InterruptedException {
 

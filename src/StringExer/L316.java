@@ -18,7 +18,7 @@ public class L316 {
     //
     //输入：s = "cbacdcbc"
     //输出："acdb"
-    public String removeDuplicateLetters(String s) {
+    public static String removeDuplicateLetters(String s) {
         //先判断有哪些字母----取出来只出现一次
         //单调栈+HashMap判断
         Map<Character,Integer> Judge=new HashMap<>();
@@ -66,7 +66,7 @@ public class L316 {
         return sb.reverse().toString();
     }
 
-    public String removeDuplicateLetters(String s){
+    public static String removeDuplicateLetters1(String s){
         Stack<Character> stk=new Stack<>();
         //用什么来判断是不是已经存在
         //用什么判断出现了几次？-----int[256] Or Hashmap

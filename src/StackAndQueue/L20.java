@@ -25,10 +25,6 @@ public class L20 {
         Stack<Character> judgement=new Stack<>();
         char[] chars = s.toCharArray();
 
-        int z=0;
-        int x=0;
-        int c=0;
-
         for(int i=0;i<chars.length;i++){
             if(chars[i]=='('){
                 judgement.push(')');
@@ -36,7 +32,6 @@ public class L20 {
                 judgement.push(']');
             }else if(chars[i]=='{'){
                 judgement.push('}');
-
             }else if(judgement.isEmpty()||judgement.peek()!=chars[i]){
                 //如果栈顶元素不是当前遍历到的括号
                 //那就无法一一消除

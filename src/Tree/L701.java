@@ -60,7 +60,7 @@ public class L701 {
 
 
     //迭代方法
-    public TreeNode insertIntoBST(TreeNode root, int val) {
+    public static TreeNode insertIntoBST1(TreeNode root, int val) {
         if(root==null){
             return new TreeNode(val);
         }
@@ -86,12 +86,13 @@ public class L701 {
                 pre.right=new TreeNode(val);
             }
 
-            return newRoot;
+
 
 
 
         }
 
+        return newRoot;
 
 
     }

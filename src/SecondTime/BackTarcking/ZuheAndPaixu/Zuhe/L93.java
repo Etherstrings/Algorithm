@@ -29,6 +29,7 @@ public class L93 {
     //输出：["0.0.0.0"]
     public List<String> restoreIpAddresses(String s) {
         //
+        return new ArrayList<>();
     }
     LinkedList<String> Path=new LinkedList<>();
     List<List<String>> ans=new ArrayList<>();
@@ -36,21 +37,24 @@ public class L93 {
         //返回条件
         //如果切成第四段之后
         //第四段合法
-        if(point==3){
-            if(HeFa(s.substring(startindex,s.length()))){
-                ans.add(new ArrayList<>(Path));
-            }
-            return;
-        }
+        /**
+         *         if(point==3){
+         *             if(HeFa(s.substring(startindex,s.length()))){
+         *                 ans.add(new ArrayList<>(Path));
+         *             }
+         *             return;
+         *         }
+         *
+         *
+         *         for(int i=startindex;i<s.length();i++){
+         *             //当前的字串
+         *             //是否满足？
+         *             String temp=s.substring(startindex,i+1);
+         *             if(HeFa(temp)){
+         *                 Path.add(temp)
+         *             }
+         *         }
+         */
 
-
-        for(int i=startindex;i<s.length();i++){
-            //当前的字串
-            //是否满足？
-            String temp=s.substring(startindex,i+1);
-            if(HeFa(temp)){
-                Path.add(temp)
-            }
-        }
     }
 }

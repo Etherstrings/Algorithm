@@ -55,7 +55,7 @@ public class L451 {
         return ans;
     }
 
-    public String frequencySort(String s){
+    public String frequencySort1(String s){
         //上方思路应该是对的
         Map<Character,Integer> Judge=new HashMap<>();
         for(Character a:s.toCharArray()){
