@@ -1,6 +1,6 @@
 package TwoPoint;
 
-import static sun.swing.MenuItemLayoutHelper.max;
+
 
 /**
  * @author Etherstrings

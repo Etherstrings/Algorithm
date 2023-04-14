@@ -43,4 +43,22 @@ public class L203 {
         }
         return Dummy.next;
     }
+
+    public ListNode remove(ListNode head, int val){
+        if(head==null){
+            return null;
+        }
+        ListNode Dummy=new ListNode(-1,head);
+        ListNode Pre=Dummy;
+        ListNode Now=Dummy.next;
+        while(Now!=null){
+            if(Now.val==val){
+                Pre.next=Now.next;
+            }else {
+                Pre=Now;
+            }
+            Now=Now.next;
+        }
+        return Dummy.next;
+    }
 }
