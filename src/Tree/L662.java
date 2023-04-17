@@ -37,5 +37,6 @@ public class L662 {
         while(!Judge.isEmpty()){
 
         }
+        return nlevel;
     }
 }

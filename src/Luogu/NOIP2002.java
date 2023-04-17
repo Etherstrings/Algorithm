@@ -35,7 +35,7 @@ public class NOIP2002 {
         grid[Max+1][May-2]=1;
 
         //到达当前位置可走路径
-        int[][] dp=new int[end[0]][end[1]];
+        long[][] dp=new long[end[0]][end[1]];
         //初始化x
         //初始化y
         dp[0][0]=1;

@@ -31,6 +31,6 @@ public class L6166 {
     //可以证明 "9" 能够形成的最大回文整数。
     //注意返回的整数不应含前导零。
     public String largestPalindromic(String num) {
-
+        return "";
     }
 }

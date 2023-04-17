@@ -32,7 +32,7 @@ public class L500_way2 {
         String line1="qwertyuio";
         String line2="asdfghjkl";
         String line3="zxcvbnm";
-        if(line1.contains(c.toString()){
+        if(line1.contains(c.toString())){
             //第一行了
             for(Character d:How.keySet()){
                 if(!line1.contains(d.toString())){
@@ -50,6 +50,6 @@ public class L500_way2 {
         }
 
 
-
+        return true;
     }
 }

@@ -18,7 +18,7 @@ public class L42 {
     //输出: 6
     //解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
     public int maxSubArray(int[] nums) {
-
+        return 1;
     }
 
 }

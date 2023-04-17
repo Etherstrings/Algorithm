@@ -37,5 +37,6 @@ public class L443 {
         for(int i=slow;i<chars.length;i++){
 
         }
+        return 1;
     }
 }

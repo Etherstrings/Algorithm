@@ -50,6 +50,7 @@ public class L40 {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
         BackTracking(candidates,target,0);
+
         return Result;
     }
 
@@ -64,10 +65,6 @@ public class L40 {
             if(i > index && candidates[i] == candidates[i - 1]){
                 continue;
             }
-
-
-
-
 
             sum+=candidates[i];
             Path.add(candidates[i]);

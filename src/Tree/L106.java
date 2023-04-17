@@ -37,6 +37,9 @@ public class L106 {
         //就是根节点
         int rootval=postorder[postright-1];
         TreeNode root = new TreeNode(rootval);
+        //此时
+        //在中序遍历中找到了根节点的数值
+        //左边的就是left 右边的就是right
         int rootindex=0;
         for(int i=inleft;i<inright;i++){
             if(inorder[i]==rootval){
@@ -45,9 +48,7 @@ public class L106 {
             }
         }
 
-        //此时
-        //在中序遍历中找到了根节点的数值
-        //左边的就是left 右边的就是right
+
 
         //中序的左边
         //节点的前边都是 节点为index 左边为left-index

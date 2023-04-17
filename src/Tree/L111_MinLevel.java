@@ -38,7 +38,8 @@ public class L111_MinLevel {
                 }
             }
 
-            return deep;
+
         }
+        return deep;
     }
 }

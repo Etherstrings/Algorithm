@@ -8,7 +8,7 @@ public class PQueue {
         //小顶堆--堆顶小于每个子孩子
         Queue<Integer> queue1 = new PriorityQueue<>((x, y) -> (x - y));
         //大顶堆--堆顶大于每个子孩子。
-        Queue<Integer> queue2 = new PriorityQueue<>((x, y) -> (y - x));
+
         //分别为加入、推出、取堆顶元素
         queue1.offer(5);
         queue1.poll();
