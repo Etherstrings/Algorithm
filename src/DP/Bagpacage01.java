@@ -1,5 +1,7 @@
 package DP;
 
+import java.util.Scanner;
+
 /**
  * @description:
  * @author： wuboyu

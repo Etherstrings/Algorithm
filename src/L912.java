@@ -49,6 +49,7 @@ public class L912 {
         quickSort(nums, start, left - 1);
         // 右边数组进行递归
         quickSort(nums, left + 1, end);
+
     }
 
 }

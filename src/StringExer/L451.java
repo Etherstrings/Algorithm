@@ -47,7 +47,7 @@ public class L451 {
         for(Map.Entry a:Judge.entrySet()){
             AsnwerList.add(a);
         }
-        Collections.sort(AsnwerList,com);
+        //Collections.sort(AsnwerList,com);
         String ans="";
         for(Map.Entry a:AsnwerList){
             ans+=a.getKey();

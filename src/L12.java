@@ -23,4 +23,23 @@ public class L12 {
     //C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
     //给你一个整数，将其转为罗马数字。
 
+
+    static String[] sym={"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+    static int[] values={1000,900,500,400,100,90,50,40,10,9,5,4,1};
+    public static String intToRoma(int num){
+        StringBuffer ans=new StringBuffer();
+        //从左侧有限匹配最大的值给num
+        for(int i=0;i<sym.length;i++){
+            int value=values[i];
+            String str=sym[i];
+            while(num>=value){
+                num=num-value;
+                ans.append(str);
+            }
+            if(num==0){
+                break;
+            }
+        }
+        return ans.toString();
+    }
 }

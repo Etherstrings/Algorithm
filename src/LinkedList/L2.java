@@ -16,35 +16,45 @@ public class L2 {
     //你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-
-
-        //这个思路是错的
-        //翻转l1 l2
-        reverseList(l1);
-        reverseList(l2);
-
-        String a="";
-        String b="";
-        ListNode Pointa=l1;
-        ListNode Pointb=l2;
-        while(Pointa!=null){
-            a+=Pointa.val;
-            Pointa=Pointa.next;
+        int v1;
+        int v2;
+        if(l1.val==0&&l2.val==0){
+            v1=0;
+            v2=0;
+            return new ListNode(0,null);
+        }else if(l1.val==0){
+            v1=0;
+            return reverseList(l2);
+        }else if(l2.val==0){
+            return reverseList(l1);
+        }else {
+            l1=reverseList(l1);
+            l2=reverseList(l2);
+            String num1="";
+            String num2="";
+            ListNode now=l1;
+            while(now!=null){
+                num1+=now.val;
+                now=now.next;
+            }
+            now=l2;
+            while (now!=null){
+                num2+=now.val;
+                now=now.next;
+            }
+            int ans=Integer.parseInt(num1)+Integer.parseInt(num2);
+            String ss=ans+"";
+            int[] s=new int[ss.length()];
+            for(int i=0;i<ss.length();i++){
+                s[i]=Integer.parseInt(ss.charAt(i)+"");
+            }
+            return reverseList(arrayToListNode(s));
         }
-        while(Pointb!=null){
-            b+=Pointb.val;
-            Pointb=Pointb.next;
-        }
-        Integer anew = Integer.valueOf(a);
-        Integer bnew=Integer.valueOf(b);
-        int sum=anew+bnew;
-
 
 
     }
 
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
 
         ListNode Pre=null;
         ListNode Now=head;
@@ -62,5 +72,47 @@ public class L2 {
             Now=Temp;
         }
         return Pre;
+    }
+
+    public static ListNode arrayToListNode(int[] s) {
+        ListNode root = new ListNode(s[0]);
+        ListNode other = root;
+        for (int i = 1; i < s.length; i++) {
+            ListNode temp = new ListNode(s[i]);
+            other.next = temp;
+            other = temp;
+        }
+        return root;
+    }
+
+    public ListNode addInList (ListNode head1, ListNode head2) {
+        // write code here
+        if(head1.val==0&&head2.val==0){
+            return new ListNode(0,null);
+        }else if(head1.val==0){
+            return reverseList(head2);
+        }else if(head2.val==0){
+            return reverseList(head1);
+        }else {
+            String num1="";
+            String num2="";
+            ListNode now=head1;
+            while(now!=null){
+                num1+=now.val;
+                now=now.next;
+            }
+            now=head2;
+            while (now!=null){
+                num2+=now.val;
+                now=now.next;
+            }
+            int ans=Integer.parseInt(num1)+Integer.parseInt(num2);
+            String ss=ans+"";
+            int[] s=new int[ss.length()];
+            for(int i=0;i<ss.length();i++){
+                s[i]=Integer.parseInt(ss.charAt(i)+"");
+            }
+            return arrayToListNode(s);
+        }
     }
 }
