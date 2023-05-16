@@ -12,9 +12,9 @@ public class NOIP2002 {
         String[] line1=in.nextLine().split(" ");
         int[] end= {Integer.parseInt(line1[0]),Integer.parseInt(line1[1])};
         int[] Ma={Integer.parseInt(line1[2]),Integer.parseInt(line1[3])};
-        //20行20列
+        //25行25列
         //初始化矩阵
-        int[][] grid=new int[20][20];
+        int[][] grid=new int[25][25];
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
                 grid[i][j]=0;
@@ -35,28 +35,19 @@ public class NOIP2002 {
         grid[Max+1][May-2]=1;
 
         //到达当前位置可走路径
-        long[][] dp=new long[end[0]][end[1]];
+        long[][] dp=new long[25][25];
         //初始化x
         //初始化y
-        dp[0][0]=1;
-        //往下初始化x
-        for(int i=0;i< grid.length;i++){
-            if(grid[i][0]==1){
-                dp[i][0]=0;
-            }else {
-                dp[i][0]=1;
-            }
-        }
-        //往右初始化y
-        for(int i=0;i<grid[0].length;i++){
-            if(grid[0][i]==1){
-                dp[0][i]=0;
-            }else {
-                dp[0][i]=1;
-            }
-        }
-        for(int i=1;i<dp.length;i++){
-            for(int j=1;j<dp[0].length;j++){
+        dp[1][1]=1;
+
+        for(int i=1;i<=end[0];i++){
+            for(int j=1;j<=end[1];j++){
+                if(i==1&&j==1){
+                    continue;
+                }
+                if(grid[i][j]==1){
+                    continue;
+                }
                 dp[i][j]=dp[i-1][j]+dp[i][j-1];
             }
         }
