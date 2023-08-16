@@ -1,6 +1,6 @@
 package AcWing.Base.TwoCut;
 
-import org.junit.Test;
+
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @create 2023-03-21 16:09 AcWing - the name of the target package where the new class or interface will be created.  Algorithm - the name of the current project.  null.java - the name of the PHP file that will be created.  A789 - the name of the new file which you specify in the New File dialog box during the file creation.  ps - the login name of the current user.  2023/3/21 - the current system date.  16:09 - the current system time.  2023 - the current year.  03 - the current month.  21 - the current day of the month.  16 - the current hour.  09 - the current minute.  IntelliJ IDEA - the name of the IDE in which the file will be created.  3月 - the first 3 letters of the month name. Example: Jan, Feb, etc.  三月 - full name of a month. Example: January, February, etc
  */
 public class A789 {
-    @Test
+
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         String[] line1=in.nextLine().split(" ");
