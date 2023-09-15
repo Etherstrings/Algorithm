@@ -1,0 +1,12 @@
+
+h
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(¥¢ÿÿÿÿÿ8ºÊ›ı¦1
+_
+java:S2184*"BCast one of the operands of this division operation to a "double".(Ù¹‹‚8ºÊ›ı¦1
+h
+java:S21842"FCast one of the operands of this multiplication operation to a "long".(¥¢ÿÿÿÿÿ8ºÊ›ı¦1
+_
+java:S21846"BCast one of the operands of this division operation to a "double".(Úë­ü8ºÊ›ı¦1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…ä‘š8ºÊ›ı¦1
+G	java:S106"+Replace this use of System.out by a logger.(æ°¬ÿ8ÁÊ›ı¦1
+j	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´Ü¥û8ÄÊ›ı¦1

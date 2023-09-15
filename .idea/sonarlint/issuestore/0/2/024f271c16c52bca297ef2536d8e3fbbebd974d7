@@ -1,0 +1,54 @@
+
+k	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùèÖ›þÿÿÿÿ
+h
+java:S1104@"MMake N a static final constant or non-public and provide accessors if needed.(ôÁçùÿÿÿÿ
+f
+java:S1104B"PMake tree a static final constant or non-public and provide accessors if needed.(Ò»Þˆ
+l
+java:S1104D"QMake state a static final constant or non-public and provide accessors if needed.(™ÑØ¶þÿÿÿÿ
+k
+java:S1104F"PMake dist a static final constant or non-public and provide accessors if needed.(­­øÊøÿÿÿÿ
+l
+java:S1104H"QMake Small a static final constant or non-public and provide accessors if needed.(åÀž¿ýÿÿÿÿ
+c
+java:S1104J"MMake n a static final constant or non-public and provide accessors if needed.(æÙˆ
+c
+java:S1104J"MMake m a static final constant or non-public and provide accessors if needed.(æÙˆ
+B
+java:S1444@"'Make this "public static N" field final(ôÁçùÿÿÿÿ
+@
+java:S1444B"*Make this "public static tree" field final(Ò»Þˆ
+F
+java:S1444D"+Make this "public static state" field final(™ÑØ¶þÿÿÿÿ
+E
+java:S1444F"*Make this "public static dist" field final(­­øÊøÿÿÿÿ
+F
+java:S1444H"+Make this "public static Small" field final(åÀž¿ýÿÿÿÿ
+=
+java:S1444J"'Make this "public static n" field final(æÙˆ
+=
+java:S1444J"'Make this "public static m" field final(æÙˆ
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨üñÂ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(þÕ·
+g
+java:S3008@"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÁçùÿÿÿÿ
+k
+java:S3008H"PRename this field "Small" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÀž¿ýÿÿÿÿ
+\
+java:S1845J"FRename field "n" to prevent any misunderstanding/clash with field "N".(æÙˆ
+5
+java:S1659J"Declare "m" on a separate line.(æÙˆ
+:
+java:S2386M"Make member "tree" "protected".(þöÍÞøÿÿÿÿ
+6
+java:S2386N" Make member "state" "protected".(ÖÓÄÃ
+:
+java:S2386O"Make member "dist" "protected".(µÉäëøÿÿÿÿ
+E	java:S106["+Replace this use of System.out by a logger.(øˆÁšüÿÿÿÿ
+c	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ž¬†È
+6
+java:S2386^" Make member "Small" "protected".(æòž¯
+T
+java:S1155c">Use isEmpty() to check whether the collection is empty or not.(×Ñ¦Ð
+B
+java:S1125k"'Remove the unnecessary boolean literal.(öß—Þøÿÿÿÿ

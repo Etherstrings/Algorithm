@@ -1,0 +1,29 @@
+
+k	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åæ¹âùÿÿÿÿ
+f	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÚÕ‹
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾ï«úÿÿÿÿ
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾ï«úÿÿÿÿ
+d
+java:S1104!"OMake Ino a static final constant or non-public and provide accessors if needed.(êÑn
+f
+java:S1104""PMake Post a static final constant or non-public and provide accessors if needed.(Œ¸
+>
+java:S1444!")Make this "public static Ino" field final(êÑn
+@
+java:S1444""*Make this "public static Post" field final(Œ¸
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ê¼íó
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ü©Ãìøÿÿÿÿ
+c
+java:S3008!"NRename this field "Ino" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÑn
+e
+java:S3008""ORename this field "Post" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ¸
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ê¼íó
+9
+java:S2386"Make member "Ino" "protected".(î†²âùÿÿÿÿ
+5
+java:S2386"Make member "Post" "protected".(Ö¥Ç¤
+T
+java:S1155L">Use isEmpty() to check whether the collection is empty or not.(üªŸù
+E
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
