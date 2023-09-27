@@ -32,9 +32,9 @@ public class A797 {
         for(int i=1;i<=n;i++){
             B[i]+=B[i-1];
         }
-        for(int i = 1; i <= n; i ++)
+        for(int i = 1; i <= n; i ++){
             System.out.println(B[i]);
-
+        }
     }
 
     public static void insert(int l,int r,int c){
