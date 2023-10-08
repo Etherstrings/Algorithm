@@ -10,8 +10,9 @@ import java.util.Queue;
 public class NumberOfSiblingsOfAGivenNodeInNAryTree {
 
     public static int maxDepth(Node root) {
-        if (root == null)
+        if (root == null) {
             return 0;
+        }
         int max = 0;
         for (Node n : root.children) {
             max = Math.max(max, maxDepth(n));
