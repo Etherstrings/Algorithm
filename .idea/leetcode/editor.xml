@@ -212,6 +212,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[1726]同积元组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/doc/content/[1726]同积元组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1726" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[1726]同积元组.java" />
+              <option name="titleSlug" value="tuple-with-same-product" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[174]地下城游戏.java">
           <value>
             <LeetcodeEditor>
@@ -399,6 +410,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[2525]根据规则将箱子分类.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/doc/content/[2525]根据规则将箱子分类.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2525" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[2525]根据规则将箱子分类.java" />
+              <option name="titleSlug" value="categorize-box-according-to-criteria" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[2531]使字符串总不同字符的数目相等.java">
           <value>
             <LeetcodeEditor>
@@ -561,6 +583,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[337]打家劫舍 III.java" />
               <option name="titleSlug" value="house-robber-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[349]两个数组的交集.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/doc/content/[349]两个数组的交集.md" />
+              <option name="frontendQuestionId" value="leetcode.cn349" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/6x/6z8v3kbd3133k5yg9khrf1wc0000gn/T/leetcode/editor/cn/[349]两个数组的交集.java" />
+              <option name="titleSlug" value="intersection-of-two-arrays" />
             </LeetcodeEditor>
           </value>
         </entry>
