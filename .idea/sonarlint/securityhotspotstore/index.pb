@@ -165,3 +165,5 @@ C
 src/Moni/L1475.java,a/f/afd1008d90af848fe346d2084583e95285f0f37f
 J
 src/HASH/FindSumPairs.java,5/5/555c376eafc5d8541f9d47de57cdf0df1737e8a6
+C
+src/HASH/L1726.java,2/5/25cb75768e125d15be839942381e55bb75f16c73
