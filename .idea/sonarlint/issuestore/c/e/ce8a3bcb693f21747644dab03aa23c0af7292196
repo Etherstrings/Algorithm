@@ -1,0 +1,19 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦üÓ‡ùÿÿÿÿ8Åõ˜²1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÃ¹ï8Åõ˜²1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ò’8Åõ˜²1
+r	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¡ºüÿÿÿÿ8Åõ˜²1
+m	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—–Í8Åõ˜²1
+l	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Î¶8Åõ˜²1
+r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨è¶»ıÿÿÿÿ8Åõ˜²1
+m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì³Õş8Åõ˜²1
+m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äãİò8Åõ˜²1
+m	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿıã8Åõ˜²1
+r	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒªâ ÿÿÿÿÿ8Åõ˜²1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ÃŠ™úÿÿÿÿ8Æõ˜²1
+_
+java:S2259J"BA "NullPointerException" could be thrown; "Now2" is nullable here.(¼öÊ¦8ŞØö˜²1
+d
+java:S2259("BA "NullPointerException" could be thrown; "Now1" is nullable here.(ç­‘İıÿÿÿÿ8Øõ˜²1
+b
+java:S2259E"EA "NullPointerException" could be thrown; "index_a" is nullable here.(ìÇÎÛ8Øõ˜²1

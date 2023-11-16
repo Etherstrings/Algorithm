@@ -1,0 +1,16 @@
+
+r	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñþõ—øÿÿÿÿ8”±‡É°1
+m	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ÝÌÉ8”±‡É°1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆ‘Ùðúÿÿÿÿ8•±‡É°1
+o
+java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¦ªËÀ8Ð±‡É°1
+X	java:S125H"<This block of commented-out lines of code should be removed.(²šÕë8Ñ±‡É°1
+Q
+java:S2864\"4Iterate over the "entrySet" instead of the "keySet".(–”À8Ò±‡É°1
+W
+java:S2864†"4Iterate over the "entrySet" instead of the "keySet".(£¨Ç‘üÿÿÿÿ8—ðÉ°1
+H	java:S106™"+Replace this use of System.out by a logger.(¼°úÀ8Ò±‡É°1
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ª•ŽÉ°1
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8ª•ŽÉ°1

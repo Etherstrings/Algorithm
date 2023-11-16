@@ -1,0 +1,12 @@
+
+Q
+java:S1066;"/Merge this if statement with the enclosing one.(Ä×³şÿÿÿÿ8üÆ¬å³1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äıØëúÿÿÿÿ
+B
+java:S3010(" Remove this assignment of "map".(Í÷½ôøÿÿÿÿ8Ç¬å³1
+@
+java:S3010,"#Remove this assignment of "snums1".(ÌÃÅ‘8Ç¬å³1
+@
+java:S3010-"#Remove this assignment of "snums2".(ª’‚Ã8Ç¬å³1
+R
+java:S26962"6Make the enclosing method "static" or remove this set.(üØØ8ƒÇ¬å³1

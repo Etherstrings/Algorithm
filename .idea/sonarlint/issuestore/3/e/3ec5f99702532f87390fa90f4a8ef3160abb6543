@@ -1,0 +1,12 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó×Šà
+f	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÙëü
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÔğ€
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¥Í
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰¹÷
+B
+java:S1481",Remove this unused "Pathmid" local variable.(ó×Šà
+C
+java:S1481""-Remove this unused "Pathleft" local variable.(ÅÙëü
+D
+java:S1481&".Remove this unused "Pathright" local variable.(µÔğ€

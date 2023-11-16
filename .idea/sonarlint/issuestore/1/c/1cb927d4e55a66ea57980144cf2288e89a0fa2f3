@@ -1,0 +1,26 @@
+
+w
+java:S2293ˆ"YReplace the type specification in this constructor call with the diamond operator ("<>").(íÌ¬Ä8Ø•¾²1
+|
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÀÍŸñÿÿÿÿÿ8Ø•¾²1
+w
+java:S2293‘"YReplace the type specification in this constructor call with the diamond operator ("<>").(é€¬º8Ø•¾²1
+m	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şçŠ×8Ø•¾²1
+r	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğîä€ıÿÿÿÿ8Ø•¾²1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³÷æÇşÿÿÿÿ8‘Ø•¾²1
+L	java:S106>"+Replace this use of System.out by a logger.(…Ø·Æûÿÿÿÿ8ÙØ•¾²1
+L	java:S106@"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÙØ•¾²1
+o
+java:S3776B"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(¸ôÇ•8ÚØ•¾²1
+]	java:S125\"<This block of commented-out lines of code should be removed.(™«ğ±ûÿÿÿÿ8ÛØ•¾²1
+V
+java:S2864j"4Iterate over the "entrySet" instead of the "keySet".(›Öª˜úÿÿÿÿ8ÛØ•¾²1
+D
+java:S1125z"'Remove the unnecessary boolean literal.(«¸ş•8ÜØ•¾²1
+p	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¼âÒşÿÿÿÿ8ÜØ•¾²1
+u
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(—¼âÒşÿÿÿÿ8ÜØ•¾²1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÅÁ–¾²1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÆÁ–¾²1
