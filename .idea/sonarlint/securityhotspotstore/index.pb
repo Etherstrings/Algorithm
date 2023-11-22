@@ -407,3 +407,11 @@ A
 Note/TaskLists.md,1/a/1a71ad06fecfb5e76d8d74d405897c0d490aa8cc
 A
 src/DP/L2304.java,e/7/e7a22d8ac91cc0a44f07f8f2c3d8aa0dc794c797
+E
+src/TwoPoint/L10.java,4/8/48bd54978ae5e81c0850f263abb4b1ddad8334a8
+E
+src/TwoPoint/L11.java,d/b/dbd8e05b8c6fd82031ecaad90db2240187d05923
+E
+src/TanXin/L1481.java,8/a/8ae890d7affdcbfdcbba23f7efe79b7a4583390b
+F
+src/Sword2Job/L10.java,e/2/e2d740073cc5ad77f0111f9fce747a8b3fe2db04
