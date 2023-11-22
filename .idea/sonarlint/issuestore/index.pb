@@ -403,3 +403,7 @@ G.idea/sonarlint/issuestore/f/e/fe5ebb22dc02c46b298d62f96e337a75e72b590c,5/4/54
 Q.idea/sonarlint/securityhotspotstore/3/1/318c4def23f098cf3380d647621a6b3e856d23d7,8/6/865b976d01bedf2b2d5db9597b6901803d465c71
 Å
 Q.idea/sonarlint/securityhotspotstore/e/2/e2358114a6d4ced35669a89df67d7ade74adda88,0/3/0318f5b76419a923511edb8f4d6c6d2896f7ca6d
+A
+Note/TaskLists.md,1/a/1a71ad06fecfb5e76d8d74d405897c0d490aa8cc
+A
+src/DP/L2304.java,e/7/e7a22d8ac91cc0a44f07f8f2c3d8aa0dc794c797
