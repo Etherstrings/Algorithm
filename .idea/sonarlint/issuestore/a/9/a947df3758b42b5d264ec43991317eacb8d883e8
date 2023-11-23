@@ -1,0 +1,35 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë±åıÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÎ¦Î
+c
+java:S1104
+"MMake n a static final constant or non-public and provide accessors if needed.(µ™¾ã
+c
+java:S1104"MMake P a static final constant or non-public and provide accessors if needed.(Îğ˜Š
+f
+java:S1104"PMake Size a static final constant or non-public and provide accessors if needed.(®¨ı˜
+=
+java:S1444
+"'Make this "public static n" field final(µ™¾ã
+=
+java:S1444"'Make this "public static P" field final(Îğ˜Š
+@
+java:S1444"*Make this "public static Size" field final(®¨ı˜
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ùãä‚øÿÿÿÿ
+b
+java:S3008"LRename this field "P" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îğ˜Š
+e
+java:S3008"ORename this field "Size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¨ı˜
+3
+java:S2386"Make this member "protected".(Îğ˜Š
+3
+java:S2386"Make this member "protected".(®¨ı˜
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘
+P
+java:S1854"5Remove this useless assignment to local variable "N".(Ë±åıÿÿÿÿ
+A
+java:S1481"&Remove this unused "N" local variable.(Ë±åıÿÿÿÿ
+E	java:S106&"+Replace this use of System.out by a logger.(ñìá¼şÿÿÿÿ
+@	java:S106*"+Replace this use of System.out by a logger.(×îæÇ
+C	java:S1085")Either remove or fill this block of code.(¾˜—Õûÿÿÿÿ

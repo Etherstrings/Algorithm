@@ -47,4 +47,31 @@ public class L1669 {
         P.next=Nodeb;
         return list1;
     }
+
+    //2023.10.12 16:54 Second Round
+    public ListNode mergeInBetweenRoundTwo(ListNode list1, int a, int b, ListNode list2){
+        ListNode Now=list1;
+        ListNode Dum=new ListNode(-1);
+        Dum.next=list1;
+        ListNode Pre=Dum;
+        ListNode index_a= Now;
+        ListNode index_b= Now;
+        while(Now!=null){
+            if(Now.val==a){
+                index_a=Pre;
+            }
+            if(Now.val==b){
+                index_b=Now.next;
+            }
+            Pre=Now;
+            Now=Now.next;
+        }
+        index_a.next=list2;
+        ListNode Now2=list2;
+        while(Now2!=null){
+            Now2=Now2.next;
+        }
+        Now2.next=index_b;
+        return Dum.next;
+    }
 }

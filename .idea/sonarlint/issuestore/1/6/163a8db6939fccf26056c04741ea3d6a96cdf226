@@ -1,0 +1,13 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(­¢Â•ûÿÿÿÿ8ç‡Úâ´1
+Q
+java:S3740"/Provide the parametrized type for this generic.(­¢Â•ûÿÿÿÿ8ç‡Úâ´1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÂÖžûÿÿÿÿ8ç‡Úâ´1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¾¾¶þÿÿÿÿ8ç‡Úâ´1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³÷æÇþÿÿÿÿ8ç‡Úâ´1
+8
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ8ó‡Úâ´1
+X	java:S125"<This block of commented-out lines of code should be removed.(©‘œ¯8õ‡Úâ´1
+[
+java:S2130"9Use "Integer.parseInt" for this string-to-int conversion.(ÐÆÁþÿÿÿÿ8õ‡Úâ´1

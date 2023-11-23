@@ -1,10 +1,13 @@
 # Tasks
+3-5年：
+    
+    想明白究竟想要什么？
 长期：
 
 1.大数据
-
+    她已经学到了不少的内容，跟着学习
 2.机器学习
-
+    
 短期：
 
 1.AIGC要不要报名，链接：https://mp.weixin.qq.com/s/LCbkvdQKBSukxF9V_xGd1g
@@ -151,5 +154,3 @@ https://gitee.com/liangzicao/bytemecc-spring-boot-starter-bloomFilter
 
 40.推特-算法
 https://github.com/twitter/the-algorithm
-
-41.

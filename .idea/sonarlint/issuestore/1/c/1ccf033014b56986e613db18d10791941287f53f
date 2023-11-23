@@ -1,0 +1,19 @@
+
+o
+java:S1104"RMake PreSum a static final constant or non-public and provide accessors if needed.(ÖÁÏë8†¬†¼¼1
+I
+java:S1444",Make this "public static PreSum" field final(ÖÁÏë8†¬†¼¼1
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆïØî
+n
+java:S3008"QRename this field "PreSum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÁÏë8‰¬†¼¼1
+o	java:S100	"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Â‚úÿÿÿÿ8¬É‡¼¼1
+>
+java:S2386
+"!Make member "PreSum" "protected".(û„¹É8Š¬†¼¼1
+S
+java:S2696
+"6Make the enclosing method "static" or remove this set.(û„¹É8‹¬†¼¼1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(Ş½Ïıÿÿÿÿ8­É‡¼¼1
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(¬ºø€8­É‡¼¼1
