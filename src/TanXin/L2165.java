@@ -38,6 +38,12 @@ public class L2165 {
     //
     //
     // Related Topics 数学 排序 👍 13 👎 0
+
+    //> 2023/11/29 19:35:18
+    //解答成功:
+    //	执行耗时:2 ms,击败了48.33% 的Java用户
+    //	内存消耗:38.6 MB,击败了38.33% 的Java用户
+
     public static void main(String[] args) {
         System.out.println(smallestNumber(310));
     }
