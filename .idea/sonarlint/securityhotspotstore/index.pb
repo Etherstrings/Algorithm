@@ -441,3 +441,15 @@ E
 src/TanXin/L2165.java,3/b/3b2cd1a1e1d54dc70d899e9123e18605bf0bda99
 A
 src/BFS/L433.java,6/7/67b91cec03cce4c140291e06a4aaca1dbaf9fc73
+C
+src/HASH/L1657.java,9/a/9af33ec2a1fa6b7d026c9823b3cb7021c58da5b3
+C
+src/L1688Match.java,c/2/c265fbf4b2105859a7597e6d0fb0c54d51d7579e
+E
+src/Math/Int1618.java,d/b/db7980e6ede22a05f4f1a67daa1d26fc02b4a68c
+J
+src/Sword2Job/Mian410.java,e/6/e60a5595ecc423af4fdad3bde07d5e90bfa80866
+G
+src/BingChaJi/L934.java,3/0/30b2c32b04e8c54897d5cb4eaf9a41e175b4675b
+C
+src/HASH/L2661.java,e/3/e32e71dc45f057241a5043952f105cee42977268
