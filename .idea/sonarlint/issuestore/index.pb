@@ -461,3 +461,15 @@ O
 src/Design/MagicDictionary.java,a/0/a0138fd0ab6b1fbfd0493344a4d249f4bbeb25dd
 C
 src/Grid/L2477.java,7/c/7cbe16c4670fcd07066a0801440733e38fe1bc90
+D
+src/Design/Bank.java,0/4/046402fbe53615700c3fe0291647dd0aaa8c5927
+P
+ src/BackStracking/L51NQueen.java,4/c/4c69dfbaab79ed88e00270d0e1f5f9f66ee09b8c
+C
+src/Grid/L1466.java,4/1/4140d93b6d7e88cb46af90c5689d28dac03c8420
+A
+src/DP/L2008.java,a/5/a540367eef0859f9ee9ebe3ecef312e2993cacee
+A
+src/DFS/L631.java,b/3/b351d68a65f78510b3fdbb9a3f2c56e4c49c516c
+A
+src/BFS/L631.java,c/3/c3d2b8f243df63dc37573b28ea01e03e88f8290b
