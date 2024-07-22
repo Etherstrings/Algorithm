@@ -1,6 +1,6 @@
 
-L
-java:S1066#"/Merge this if statement with the enclosing one.(ñ» Ú8ÒöÑù°1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¸»öùÿÿÿÿ8ÓöÑù°1
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ç¡ž€øÿÿÿÿ8ë¿Óù°1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¸»öùÿÿÿÿ8ÓöÑù°1J$13f0538d-767c-4962-95da-a094dea82533
+r
+java:S1066#"/Merge this if statement with the enclosing one.(ñ» Ú8ÒöÑù°1J$6a4e4dee-a541-4a43-b1fc-71c8cac132ec
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ç¡ž€øÿÿÿÿ8ë¿Óù°1J$9a8abcd8-95ee-4f21-a2d7-90ceb41cf958

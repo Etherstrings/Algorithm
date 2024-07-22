@@ -505,3 +505,11 @@ J
 src/PreSum/LMagicBean.java,7/5/759f6365f2d6a1264c3a5145830ddc35f0f42143
 C
 src/Moni/L2028.java,f/4/f4b5bec8a57982d9193edcdb79bfc792cb43e484
+C
+src/Moni/L2982.java,c/4/c47e32485a919136610c030451cea02f4a43e87f
+I
+src/StringExer/L2288.java,f/c/fcca1d6de83b18829d0e6f1415c40eba4050759a
+B
+src/Moni/LP61.java,c/9/c9d69fd1a2846144951c9d0ffa1d9e850e89df52
+B
+src/BFS/L2101.java,1/b/1b78d9a776cbd550e3670fa698731850414c19c1
