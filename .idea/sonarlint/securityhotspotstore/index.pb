@@ -515,3 +515,7 @@ B
 src/BFS/L2101.java,1/b/1b78d9a776cbd550e3670fa698731850414c19c1
 B
 src/HASH/L290.java,6/e/6e1bd9ca3824e0d769f7377e4ddbd7c59f55efcd
+J
+src/KwaiCTF/CacerCode.java,7/a/7a081f3e06274aa2403e5e79718ed93f16e63188
+C
+src/Grid/L1436.java,7/e/7eb94d2816c65454696499e4b1509812a3a9f2bb
