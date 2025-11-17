@@ -1,0 +1,7 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—î´¤8†õ¸ˆ©3J$05efeb10-7b28-4723-ad29-5fdfdef5010f
+
+java:S25896"7Remove this expression which always evaluates to "true"(ıŠƒñÿÿÿÿÿ8‡õ¸ˆ©3J$f6d789aa-dab8-41ef-a824-d4dbe6dae513
+ 	java:S135'"YReduce the total number of break and continue statements in this loop to use at most one.(´‹¹üÿÿÿÿ8‡õ¸ˆ©3J$a357dad9-3278-4e9c-bbdd-151f42848756
+^
+java:S3626;"Remove this redundant jump.(ÉŠ©ƒ8ˆõ¸ˆ©3J$ffbb074f-7304-414c-b3b0-ad03349686cc
