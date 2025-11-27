@@ -81,19 +81,21 @@ public class L27RemoveSlowAndFast {
 
     }
     public static void main(String[] args) {
-
+        int[] nums = {0,1,2,2,3,0,4,2};
+        int val = 2;
+        int answer = getAnswer(nums, val);
+        System.out.println(answer);
     }
 
-    public int getAnswer(int[] nums, int val) {
-        //slow和fast都从0开始
-        //用fast的值替换slow
-        int slow = 0,fast = 0;
-        while (fast < nums.length) {
+
+    //一句话思路：快值不等于val的时候 赋值给慢值，慢值+1
+    public static int getAnswer(int[] nums, int val) {
+        int slow = 0;
+        for (int fast = 0;fast<nums.length;fast++) {
             if (nums[fast] != val) {
                 nums[slow] = nums[fast];
                 slow++;
             }
-            fast++;
         }
         return slow;
     }

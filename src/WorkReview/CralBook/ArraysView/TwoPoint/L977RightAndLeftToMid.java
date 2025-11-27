@@ -62,4 +62,38 @@ public class L977RightAndLeftToMid {
         answer[i] = nums[l]*nums[r];
         return answer;
     }
+
+
+    /**
+     * 一句话：左右两边取最大值，直到两边合并
+     * @param nums
+     * @return
+     */
+    public static int[] getAnswer(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        int [] ans = new int[nums.length];
+        int index = ans.length-1;
+        while (left!=right) {
+            if (nums[left]*nums[left] >= nums[right]*nums[right]) {
+                ans[index] = nums[left]*nums[left];
+                index--;
+                left++;
+            } else {
+                ans[index] = nums[right]*nums[right];
+                index--;
+                right--;
+            }
+        }
+        ans[index] = nums[right]*nums[right];
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {-4,-1,0,3,10};
+        int[] answer = getAnswer(nums);
+        for (int i = 0; i < answer.length; i++) {
+            System.out.println(answer[i]);
+        }
+    }
 }

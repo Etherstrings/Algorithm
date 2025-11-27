@@ -63,5 +63,25 @@ public class L209RangeNumberSumLowThanX {
         int[] nums = new int[]{2,3,1,2,4,3};
         int target = 7;
         System.out.println(minSubArrayLen(target, nums));
+        System.out.println(getAnswer(target,nums));
+    }
+
+    public static int getAnswer(int target, int[] nums) {
+        int ans = Integer.MAX_VALUE;
+        int slow = 0;
+        int fast = 0;
+        int sum = 0;
+        for (;fast<nums.length;fast++) {
+            sum += nums[fast];
+            for (;sum>=target;) {
+                ans = Math.min(fast-slow+1,ans);
+                sum -= nums[slow];
+                slow++;
+            }
+        }
+        if (ans == Integer.MAX_VALUE) {
+            return 0;
+        }
+        return ans;
     }
 }

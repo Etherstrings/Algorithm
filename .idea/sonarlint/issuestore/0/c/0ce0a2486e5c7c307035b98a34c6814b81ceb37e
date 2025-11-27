@@ -1,7 +1,8 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—î´¤8†õ¸ˆ©3J$05efeb10-7b28-4723-ad29-5fdfdef5010f
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—î´¤8é«®©3J$81c9eacf-d833-4af2-88d6-f114fe64a5da
 
-java:S25896"7Remove this expression which always evaluates to "true"(ıŠƒñÿÿÿÿÿ8‡õ¸ˆ©3J$f6d789aa-dab8-41ef-a824-d4dbe6dae513
- 	java:S135'"YReduce the total number of break and continue statements in this loop to use at most one.(´‹¹üÿÿÿÿ8‡õ¸ˆ©3J$a357dad9-3278-4e9c-bbdd-151f42848756
+java:S25896"7Remove this expression which always evaluates to "true"(ıŠƒñÿÿÿÿÿ8é«®©3J$dcb8549c-1052-407b-b03c-7943f1f44e2f
+ 	java:S135'"YReduce the total number of break and continue statements in this loop to use at most one.(´‹¹üÿÿÿÿ8é«®©3J$dffda92b-5934-4501-a314-51e0b0791804
 ^
-java:S3626;"Remove this redundant jump.(ÉŠ©ƒ8ˆõ¸ˆ©3J$ffbb074f-7304-414c-b3b0-ad03349686cc
+java:S3626;"Remove this redundant jump.(ÉŠ©ƒ8 é«®©3J$e8c46ee1-4b0c-4d21-bef4-725358e1c787
+r	java:S106`"+Replace this use of System.out by a logger.(ôîßÕşÿÿÿÿ8éĞ¬®©3J$36e1fdca-b96d-4d54-86ed-fe279ca98f4e

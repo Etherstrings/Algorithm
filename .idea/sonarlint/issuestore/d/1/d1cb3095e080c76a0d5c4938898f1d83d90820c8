@@ -1,7 +1,4 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—î´¤8ðí”‡©3J$6d4ac3ee-1e8e-46a5-baf9-0973b98e99e6
-Ä
-java:S1186S"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8ðí”‡©3J$e103f702-bff0-49d4-892f-62fe65c34681
-~	java:S125"<This block of commented-out lines of code should be removed.( ÕÛ8ñí”‡©3J$abf3b332-b8fa-48cc-973f-cc18331f3e03
-j
-java:S1659Z""Declare "fast" on a separate line.(ö¯ˆ¯þÿÿÿÿ8¾ê«‡©3J$b087b99f-035e-46f5-abfd-e169ddac941d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—î´¤8ÇÞ­©3J$7dfe5ba0-6ba7-4d6e-9324-c0781e07d346
+~	java:S125"<This block of commented-out lines of code should be removed.( ÕÛ8ÉÞ­©3J$889fb840-7ed5-4d5a-a7fd-6f7499291c77
+m	java:S106W"+Replace this use of System.out by a logger.(ô¤„å8Ã·ò­©3J$7a193342-a6a8-4d3e-a79d-b67516fad0d3
