@@ -41,5 +41,20 @@ public class L206ReverseList {
         return Pre;
     }
 
+    public static ListNode reverseAll(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode pre = null;
+        ListNode now = head;
+        while (now!=null) {
+            ListNode temp = now.next;
+            now.next = pre;
+            pre = now;
+            now = temp;
+        }
+        return pre;
+    }
+
 
 }
