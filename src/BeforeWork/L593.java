@@ -53,7 +53,7 @@ public class L593 {
     }
 
     Integer length(int[] a,int[] b){
-        int lenght=(a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1]);
-        return lenght;
+        int length=(a[0]-b[0])*(a[0]-b[0])+(a[1]-b[1])*(a[1]-b[1]);
+        return length;
     }
 }
