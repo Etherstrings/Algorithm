@@ -1,9 +1,6 @@
 package Test;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
+import java.util.Arrays;
 
 /**
  * @author wuboyu <wuboyu@kuaishou.com>
@@ -23,21 +20,39 @@ public class Test1 {
     //1 2 3 3 3
 
     public static void main(String[] args) {
+        int[] hasMajority = {1, 2, 3, 3, 3};
+        int[] hasMajorityEven = {2, 2, 1, 2};
+        int[] noMajority = {1, 2, 3, 4};
+        int[] single = {7};
 
+        assert getShowMoreN(hasMajority) == 3 : "should find majority element 3";
+        assert getShowMoreN(hasMajorityEven) == 2 : "should find majority element 2";
+        assert getShowMoreN(noMajority) == 0 : "should return 0 when no majority exists";
+        assert getShowMoreN(single) == 7 : "single element should be the majority";
+
+        System.out.println("All Test1 assertions passed: " + Arrays.toString(hasMajority));
     }
 
     public static int getShowMoreN(int[] nums){
-        Map<Integer,Integer> map = new HashMap<>();
-        for (int num:nums) {
-            map.put(num,map.getOrDefault(num,0)+1);
-        }
-        int n = nums.length;
-        for (Entry<Integer, Integer> entry:map.entrySet()) {
-            if (entry.getValue()>=n/2) {
-                return entry.getKey();
+        int candidate = 0;
+        int count = 0;
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+                count = 1;
+            } else if (candidate == num) {
+                count++;
+            } else {
+                count--;
             }
         }
-        return 0;
+        int occurrence = 0;
+        for (int num : nums) {
+            if (num == candidate) {
+                occurrence++;
+            }
+        }
+        return occurrence > nums.length / 2 ? candidate : 0;
     }
 
 }

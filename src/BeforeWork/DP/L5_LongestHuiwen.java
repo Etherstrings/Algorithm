@@ -29,7 +29,7 @@ public class L5_LongestHuiwen {
         }
         int left=0;
         int right=0;
-        int maxlenght=0;
+        int maxLength=0;
         //遍历的顺序+递归的条件
         for(int i=s.length()-1;i>=0;i--){
             for(int j=i;j<s.length();j++){
@@ -41,13 +41,13 @@ public class L5_LongestHuiwen {
                         dp[i][j]=true;
                     }
                 }
-                if(dp[i][j]&&j-i+1>maxlenght){
-                    maxlenght=j-i+1;
+                if(dp[i][j]&&j-i+1>maxLength){
+                    maxLength=j-i+1;
                     left=i;
                     right=j;
                 }
             }
         }
-        return s.substring(left,maxlenght);
+        return s.substring(left,right + 1);
     }
 }
