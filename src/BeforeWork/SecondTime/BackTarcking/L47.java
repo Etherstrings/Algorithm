@@ -52,7 +52,7 @@ public class L47 {
                 continue;
             }
 
-            if(used[i]==true){
+            if(used[i]){
                 continue;
             }
 

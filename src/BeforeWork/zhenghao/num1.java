@@ -24,7 +24,7 @@ public class num1 {
                 right=A.substring(i+1,A.length());
             }
             flag=(right+left).equals(B);
-            if(flag==true){
+            if(flag){
                 break;
             }
         }

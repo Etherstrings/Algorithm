@@ -119,7 +119,7 @@ public class L1488 {
                         }
                     }
                 }
-                if(flag==true){
+                if(flag){
                     ans[i]=-1;
                 }
             }

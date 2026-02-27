@@ -26,7 +26,7 @@ public class L567 {
 
 
     public void DFS(String s1,boolean[] used,String s2){
-        if(flag==true){
+        if(flag){
             return;
         }
         if(Path.size()==s1.length()){

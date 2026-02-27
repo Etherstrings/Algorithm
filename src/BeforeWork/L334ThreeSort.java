@@ -54,7 +54,7 @@ public class L334ThreeSort {
                 }
             }
 
-            if(left==true&&right==true){
+            if(left&&right){
                 return true;
             }
 

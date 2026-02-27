@@ -17,7 +17,7 @@ public class L1590 {
         boolean flag=false;
         int ans=1;
         while(ans<=nums.length){
-            if(flag==true){
+            if(flag){
                 break;
             }
             for(int i=0;i<nums.length-ans;i++){

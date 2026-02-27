@@ -37,7 +37,7 @@ public class L34HaveSame2Find {
                 Flag=false;
             }
         }
-        if(Flag==true){
+        if(Flag){
             return new int[]{-1,-1};
         }
         int left=0;

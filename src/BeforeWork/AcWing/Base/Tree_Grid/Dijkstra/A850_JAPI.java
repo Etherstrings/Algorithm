@@ -104,7 +104,7 @@ public class A850_JAPI {
             //这个点当前到1号点的距离是多少
             int distance=now[1];
             //如果看过了，就是已经确定了 可以直接省略这个点
-            if(state[t]==true){
+            if(state[t]){
                 continue;
             }
             state[t]=true;

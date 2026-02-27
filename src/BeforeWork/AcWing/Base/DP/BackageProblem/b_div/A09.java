@@ -97,7 +97,7 @@ public class A09 {
     //8
     public static int size=110;
     public static int[][] dp=new int[size][size];
-    public static int[][] Size=new int[size][size];
+    public static int[][] Volume=new int[size][size];
     public static int[][] Value=new int[size][size];
     public static int[] S=new int[size];
 
@@ -110,10 +110,10 @@ public class A09 {
             int nowsize=in.nextInt();
             S[i]=nowsize;
             for(int j=0;j<nowsize;j++){
-                int ss=in.nextInt();
                 int v=in.nextInt();
-                Size[i][j]=ss;
-                Value[i][j]=v;
+                int w=in.nextInt();
+                Volume[i][j]=v;
+                Value[i][j]=w;
             }
         }
 
@@ -125,8 +125,8 @@ public class A09 {
                     //遍历第K组
 
                     //只有 当前的背包容量 才可以考虑更新这一组的这个物品
-                    if(j>=Size[i][k]){
-                        dp[i][j]=Math.max(dp[i][j],dp[i-1][j-Size[i][k]]+Value[i][k]);
+                    if(j>=Volume[i][k]){
+                        dp[i][j]=Math.max(dp[i][j],dp[i-1][j-Volume[i][k]]+Value[i][k]);
                     }
                 }
             }

@@ -36,7 +36,7 @@ public class num2 {
 
         for(int j=0;j<g[0].length;j++){
             //如果这个被用了 以及这个不能放
-            if(used[j]==true||g[level][j]==0){
+            if(used[j]||g[level][j]==0){
                 continue;
             }
             used[j]=true;

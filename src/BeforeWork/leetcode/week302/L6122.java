@@ -29,7 +29,7 @@ public class L6122 {
                     break;
                 }
             }
-            if(flag==true){
+            if(flag){
                 whichone=a;
                 break;
             }

@@ -87,11 +87,11 @@ public class A844 {
         }
     }
     public static void bfs(int x,int y,int[][] grid){
-        int temp=0;
-        int[][] dir ={{0, 1}, {1, 0}, {-1, 0}, {0, -1}}; // 四个方向
-        Queue<Point> Judge=new LinkedList<>();
-        Judge.offer(new Point(x,y,0));
-        temp++;
+        int[][] dir = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}}; // 四个方向
+        boolean[][] visited = new boolean[grid.length][grid[0].length];
+        Queue<Point> Judge = new LinkedList<>();
+        Judge.offer(new Point(x, y, 0));
+        visited[x][y] = true;
         while(!Judge.isEmpty()){
             Point now=Judge.poll();
             if (now.x == grid.length-1 && now.y == grid[0].length-1) {
@@ -104,11 +104,11 @@ public class A844 {
                 if (nowx < 0 || nowx >= grid.length || nowy < 0 || nowy >= grid[0].length) {
                     continue;  // 越界了，直接跳过
                 }
-                if(grid[nowx][nowy]==0){
+                if(grid[nowx][nowy]==0 && !visited[nowx][nowy]){
                     Judge.offer(new Point(nowx,nowy, now.step+1));
+                    visited[nowx][nowy] = true;
                 }
             }
-            temp++;
         }
 
     }

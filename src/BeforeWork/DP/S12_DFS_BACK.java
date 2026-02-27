@@ -53,7 +53,7 @@ public class S12_DFS_BACK {
         //上下左右四个方向递归
         int newi=i-1;
         if(newi>=0){
-            if(!visited[newi][j]==true){
+            if(!visited[newi][j]){
                 if( BackTarcking(index+1,newi,j,word,board,visited)){
                     result=true;
                 }
@@ -61,7 +61,7 @@ public class S12_DFS_BACK {
         }
         newi=i+1;
         if(newi< board.length){
-            if(!visited[newi][j]==true){
+            if(!visited[newi][j]){
                 if(BackTarcking(index+1,newi,j,word,board,visited)){
                     result=true;
                 }
@@ -70,7 +70,7 @@ public class S12_DFS_BACK {
         //左右
         int newj=j+1;
         if(newj<board[0].length){
-            if(!visited[i][newj]==true){
+            if(!visited[i][newj]){
                 if(BackTarcking(index+1,i,newj,word,board,visited)){
                     result=true;
                 }
@@ -79,7 +79,7 @@ public class S12_DFS_BACK {
 
         newj=j-1;
         if(newj>=0){
-            if(!visited[i][newj]==true){
+            if(!visited[i][newj]){
                 if(BackTarcking(index+1,i,newj,word,board,visited)){
                     result=true;
                 }

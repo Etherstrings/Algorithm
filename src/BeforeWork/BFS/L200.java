@@ -14,25 +14,25 @@ public class L200 {
     //当前节点按照可有的方向循环
     public int numIslands(char[][] grid) {
         //BFS应该可以直接在这里BFS
-        boolean[][] visisted=new boolean[grid.length][grid[0].length];
+        boolean[][] visited=new boolean[grid.length][grid[0].length];
         int result = 0;
         for(int i=0;i< grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
-                if(!visisted[i][j]&&grid[i][j]=='1'){
+                if(!visited[i][j]&&grid[i][j]=='1'){
                     result++;
-                    visisted[i][j]=true;
-                    BFS(grid,visisted,i,j);
+                    visited[i][j]=true;
+                    BFS(grid,visited,i,j);
                 }
             }
         }
         return result;
     }
 
-    void BFS(char[][] grid,boolean[][] visisted,int x,int y){
+    void BFS(char[][] grid,boolean[][] visited,int x,int y){
         int[][] dir ={{0, 1}, {1, 0}, {-1, 0}, {0, -1}}; // 四个方向
         Queue<int[]> Judge=new LinkedList<>();
         Judge.offer(new int[]{x,y});
-        visisted[x][y]=true;
+        visited[x][y]=true;
         while(!Judge.isEmpty()){
             int[] now=Judge.poll();
             for(int i=0;i<4;i++){
@@ -41,9 +41,9 @@ public class L200 {
                 if (nowx < 0 || nowx >= grid.length || nowy < 0 || nowy >= grid[0].length) {
                     continue;  // 越界了，直接跳过
                 }
-                if(grid[nowx][nowy]=='1'&&!visisted[nowx][nowy]){
+                if(grid[nowx][nowy]=='1'&&!visited[nowx][nowy]){
                     Judge.offer(new int[]{nowx,nowy});
-                    visisted[nowx][nowy]=true;
+                    visited[nowx][nowy]=true;
                 }
             }
         }

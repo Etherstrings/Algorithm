@@ -23,12 +23,9 @@ public class A843 {
         if(level==board.length){
             for(int i=0;i<board.length;i++){
                 for(int j=0;j<board.length;j++){
-                    if(j==board.length-1){
-                        System.out.println(board[i][j]);
-                        continue;
-                    }
                     System.out.print(board[i][j]);
                 }
+                System.out.println();
             }
             System.out.println();
             return;

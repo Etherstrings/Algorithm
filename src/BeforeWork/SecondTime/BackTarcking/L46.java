@@ -28,7 +28,7 @@ public class L46 {
         //每次排列都是从头开始搜索
         //每次都要跳过自己 也就是选过的元素
         for(int i=0;i<nums.length;i++){
-            if(used[i]==true){
+            if(used[i]){
                 continue;
             }
             used[i]=true;

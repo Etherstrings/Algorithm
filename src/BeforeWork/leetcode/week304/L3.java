@@ -22,10 +22,10 @@ public class L3 {
         }
         int N2next=edges[node2];
         int length=0;
-        while(used[N2next]!=true){
+        while(!used[N2next]){
             length++;
             N2next=edges[N2next];
-            if(used[N2next]==true){
+            if(used[N2next]){
                 length++;
             }
         }

@@ -52,7 +52,7 @@ public class L1807 {
                 in=true;
                 continue;
             }
-            if(in==true){
+            if(in){
                 continue;
             }else {
                 temp+=now;

@@ -28,7 +28,7 @@ public class L5_LongestString {
                 }
 
                 //如果当前是最大值
-                if(palindrome[i][j]==true&&j-i+1>len){
+                if(palindrome[i][j]&&j-i+1>len){
                     len=j-i+1;
                     ans=s.substring(i,j+1);
                 }
